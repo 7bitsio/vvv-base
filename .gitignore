@@ -1,5 +1,6 @@
 vendor/
 htdocs/
+public_html/
 log/
 provision/vvv-nginx.conf
 phpunit.xml
