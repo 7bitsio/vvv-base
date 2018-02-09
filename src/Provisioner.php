@@ -141,12 +141,12 @@ class Provisioner implements ProvisionerInterface
             $this->site->setDefault('db_prefix', $this->site['dbprefix']);
         }
 
-        $this->base_dir   = "{$this->vm_dir}/htdocs";
+        $this->base_dir   = "{$this->vm_dir}/public_html";
         $this->wp_content = "{$this->base_dir}/wp-content";
     }
 
     /**
-     * Clone the custom repo into the htdocs/ directory.
+     * Clone the custom repo into the public_html/ directory.
      */
     protected function cloneHtdocs()
     {
@@ -538,4 +538,3 @@ PHP;
         }
     }
 }
-
